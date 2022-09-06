@@ -1,0 +1,79 @@
+.technology {
+  min-height: 100vh;
+  background: url("../../assets/technology/background-technology-desktop.jpg")
+    no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.technology-content {
+  display: flex;
+  padding: 3.5625rem 0 0 10.375rem;
+}
+
+.technology-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.technology-links {
+  background: transparent;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #ffffff40;
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: "Bellefair", serif;
+  cursor: pointer;
+}
+
+.technology-links:hover {
+  border: 1px solid #ffffff;
+}
+
+.techonolgy-links-active {
+  background: #ffffff;
+  color: #0b0d17;
+}
+
+.technology-text-box {
+  margin-left: 5rem;
+}
+
+.technology-large-text {
+  font-family: "Bellefair", serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.technology-medium-text {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.6875rem;
+  color: #d0d6f9;
+}
+
+.technology-small-text {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  color: #d0d6f9;
+  height: 10.125rem;
+  width: 27.75rem;
+}
+
+.image {
+  width: 32.1875rem;
+  height: 32.9375rem;
+  position: absolute;
+  right: 0;
+  top: 17rem;
+}

@@ -1,0 +1,73 @@
+.crew {
+  min-height: 100vh;
+  background: url("../../assets/crew/background-crew-desktop.jpg") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.crew-content {
+  display: flex;
+  flex-direction: column;
+  padding: 3.5625rem 0 0 10.375rem;
+}
+
+.description-large-text {
+  font-family: "Bellefair", serif;
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 1.6875rem;
+}
+
+.description-medium-text {
+  font-family: "Bellefair", serif;
+  color: #ffffff;
+  opacity: 0.5;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.description-small-text {
+  font-family: "Barlow", sans-serif;
+  width: 27.75rem;
+  height: 10rem;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 2rem;
+  font-size: 1.125rem;
+}
+
+.crew-image {
+  flex-shrink: 0;
+  width: 40.5rem;
+  height: 46.3rem;
+  position: absolute;
+  top: 12.375rem;
+  right: 4.5625rem;
+}
+
+.crew-nav {
+  margin-top: 7.5rem;
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.crew-link {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+  background-color: #ffffff;
+  opacity: 0.17;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.crew-link:hover {
+  opacity: 0.5;
+}
+
+.crew-link-active {
+  opacity: 1;
+}
