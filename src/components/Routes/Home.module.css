@@ -3,6 +3,7 @@
   background: url("../../assets/home/background-home-desktop.jpg") no-repeat;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
 .text-box {
@@ -71,4 +72,71 @@
   width: 150%;
   height: 150%;
   transition: all 1s;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .home {
+    background: url("../../assets/home/background-home-tablet.jpg") no-repeat;
+    background-size: cover;
+  }
+  .text-box {
+    top: 12.625rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .medium-text {
+    font-size: 1.25rem;
+  }
+
+  .small-text {
+    font-size: 1rem;
+  }
+  .big-circle {
+    width: 15.125rem;
+    height: 15.125rem;
+    top: 43.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    background: url("../../assets/home/background-home-mobile.jpg") no-repeat;
+    background-size: cover;
+  }
+  .text-box {
+    top: 7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 0 1.5rem;
+  }
+
+  .big-text {
+    font-size: 5rem;
+  }
+
+  .medium-text {
+    font-size: 1rem;
+  }
+
+  .small-text {
+    font-size: 0.9375rem;
+    padding: 0 2.5rem;
+  }
+
+  .big-circle {
+    width: 9.375rem;
+    height: 9.375rem;
+    top: 29.3125rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .big-circle > span {
+    font-size: 1.25rem;
+  }
 }

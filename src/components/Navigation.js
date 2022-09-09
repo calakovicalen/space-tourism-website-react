@@ -8,10 +8,10 @@ import SpaceIcon from "./SpaceIcon";
 const Navigation = (props) => {
   return (
     <nav className={classes.navigation}>
-      <SpaceIcon />
+      <SpaceIcon className={classes.spaceicon} />
       <Rectangle className={classes.rectangle} />
 
-      <ul className={classes.menu}>
+      <ul id="navigation-menu" className={classes.menu}>
         <Link
           className={`${classes.link} ${
             props.activeState.home ? classes["active-link"] : ""

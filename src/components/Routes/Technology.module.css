@@ -77,3 +77,128 @@
   right: 0;
   top: 17rem;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .technology {
+    background: url("../../assets/technology/background-technology-tablet.jpg")
+      no-repeat;
+    background-size: cover;
+  }
+
+  .image {
+    position: relative;
+    left: 0;
+    top: 0;
+    order: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-bottom: 3.5rem;
+  }
+
+  .technology-content {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .technology-nav {
+    flex-direction: row;
+    order: 2;
+  }
+
+  .technology-text-box {
+    order: 3;
+    margin: 0;
+  }
+
+  .technology-links {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 2.75rem;
+  }
+
+  .technology-text-box {
+    text-align: center;
+  }
+
+  .technology-large-text {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .technology-medium-text {
+    margin-bottom: 1rem;
+  }
+
+  .technology-small-text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .technology {
+    background: url("../../assets/technology/background-technology-mobile.jpg")
+      no-repeat;
+    background-size: cover;
+    height: max-content;
+  }
+
+  .image {
+    position: relative;
+    left: 0;
+    top: 0;
+    order: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-bottom: 2.125rem;
+  }
+
+  .technology-content {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .technology-nav {
+    flex-direction: row;
+    order: 2;
+  }
+
+  .technology-text-box {
+    order: 3;
+    margin: 0;
+  }
+
+  .technology-links {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    margin-bottom: 1.625rem;
+  }
+
+  .technology-text-box {
+    text-align: center;
+  }
+
+  .technology-large-text {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .technology-medium-text {
+    margin-bottom: 0.5625rem;
+  }
+
+  .technology-small-text {
+    font-size: 0.9375rem;
+    width: 20.4375rem;
+    height: 10.9375rem;
+  }
+
+  .technology-text-box {
+    margin-left: 0;
+  }
+}

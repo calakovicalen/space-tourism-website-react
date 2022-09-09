@@ -60,3 +60,80 @@
   color: #ffffff;
   border-bottom: 3px solid #ffffff;
 }
+
+.hamburger {
+  margin-top: 16px;
+  margin-right: 16px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .hamburger {
+    display: none;
+  }
+
+  .rectangle {
+    display: none;
+  }
+
+  .spaceicon {
+    flex-shrink: 0;
+  }
+
+  .link > span {
+    display: none;
+  }
+
+  .navigation {
+    font-family: "Barlow Condensed", sans-serif;
+    padding-top: 0rem;
+    padding-left: 2.4375rem;
+    gap: 0rem;
+    justify-content: space-between;
+    font-size: 0.875rem;
+  }
+
+  .menu {
+    padding: 0 3rem;
+    width: 28.125rem;
+    margin-left: 0;
+    gap: 2.3125rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .rectangle {
+    display: none;
+  }
+
+  .spaceicon {
+    display: none;
+  }
+
+  .link {
+    height: 3rem;
+  }
+
+  .link > span {
+    display: none;
+  }
+
+  .navigation {
+    font-family: "Barlow Condensed", sans-serif;
+    padding-top: 0rem;
+    padding-left: 0;
+    gap: 0rem;
+    justify-content: space-between;
+    font-size: 0.875rem;
+  }
+
+  .menu {
+    background: none;
+    backdrop-filter: blur(0px);
+    padding: 0 0 0 0;
+    width: 100%;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1rem;
+  }
+}

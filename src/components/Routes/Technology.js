@@ -6,6 +6,9 @@ import classes from "./Technology.module.css";
 import launchvehicle from "../../assets/technology/image-launch-vehicle-portrait.jpg";
 import spaceport from "../../assets/technology/image-spaceport-portrait.jpg";
 import spacecapsule from "../../assets/technology/image-space-capsule-portrait.jpg";
+import launchvehicleLandscape from "../../assets/technology/image-launch-vehicle-landscape.jpg";
+import spaceportLandscape from "../../assets/technology/image-spaceport-landscape.jpg";
+import spacecapsuleLandscape from "../../assets/technology/image-space-capsule-landscape.jpg";
 
 const launchvehicleText = `A launch vehicle or carrier rocket is a rocket-propelled vehicle
 used to carry a payload from Earth's surface to space, usually to
@@ -32,7 +35,12 @@ const Technolgy = (props) => {
     if (url.indexOf("technology") > -1) {
       props.onTechnology();
     }
+    window.addEventListener("resize", () => {
+      setLandscape(window.innerWidth);
+    });
   }, []);
+
+  let [landscape, setLandscape] = useState(window.innerWidth);
 
   const [activateTechnology, setActivateTechnology] = useState({
     launchvehicle: true,
@@ -125,12 +133,18 @@ const Technolgy = (props) => {
         </div>
         <img
           src={
-            activateTechnology.launchvehicle
+            activateTechnology.launchvehicle && landscape > 1280
               ? launchvehicle
-              : activateTechnology.spaceport
+              : activateTechnology.spaceport && landscape > 1280
               ? spaceport
-              : activateTechnology.spacecapsule
+              : activateTechnology.spacecapsule && landscape > 1280
               ? spacecapsule
+              : activateTechnology.launchvehicle && landscape < 1280
+              ? launchvehicleLandscape
+              : activateTechnology.spaceport && landscape < 1280
+              ? spaceportLandscape
+              : activateTechnology.spacecapsule && landscape < 1280
+              ? spacecapsuleLandscape
               : ""
           }
           alt="Used technology"

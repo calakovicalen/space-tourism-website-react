@@ -74,6 +74,7 @@ function App() {
           element={<Technolgy onTechnology={activateTechnologyHandler} />}
         />
       </Routes>
+
       <Navigation
         activeState={activeState}
         onHome={activateHomeHandler}

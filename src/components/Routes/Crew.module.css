@@ -43,7 +43,7 @@
   width: 40.5rem;
   height: 46.3rem;
   position: absolute;
-  top: 12.375rem;
+  bottom: 0;
   right: 4.5625rem;
 }
 
@@ -70,4 +70,107 @@
 
 .crew-link-active {
   opacity: 1;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .crew {
+    background: url("../../assets/crew/background-crew-tablet.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .crew-image {
+    width: 28.523125rem;
+    height: 35.9375rem;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .crew-content {
+    align-items: center;
+    padding: 3.75rem 9.6875rem 2.5rem 9.6875rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .description-large-text {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .description-medium-text {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .description-small-text {
+    width: 28.625rem;
+    font-size: 1rem;
+    height: min-content;
+  }
+
+  .crew-nav {
+    margin-top: 2.5rem;
+  }
+
+  .crew-link {
+    width: 0.625rem;
+    height: 0.625rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .crew {
+    background: url("../../assets/crew/background-crew-mobile.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .crew-image {
+    width: 11.07rem;
+    height: 15.875rem;
+    right: 0;
+    left: 50%;
+    top: 8.6875rem;
+    transform: translateX(-50%);
+  }
+
+  .crew-content {
+    align-items: center;
+    margin-top: 15.9rem;
+    padding: 2rem 9.6875rem 2.5rem 9.6875rem;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #383b4b;
+  }
+
+  .crew-content > div {
+    order: 2;
+  }
+
+  .description-large-text {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .description-medium-text {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .description-small-text {
+    width: 23.25rem;
+    font-size: 0.9375rem;
+    height: min-content;
+  }
+
+  .crew-nav {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    order: 1;
+  }
+
+  .crew-link {
+    width: 0.625rem;
+    height: 0.625rem;
+  }
 }
